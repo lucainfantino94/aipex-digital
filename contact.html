@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — AIpex Digital</title>
+<meta name="description" content="Contactez AIpex Digital pour un devis ou prenez rendez-vous pour échanger sur votre projet de site web, SEO, SEA ou consulting IA.">
+<link rel="canonical" href="https://www.aipex-digital.com/contact.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Contact — AIpex Digital">
+<meta property="og:description" content="Demandez un devis ou prenez rendez-vous avec AIpex Digital.">
+<meta property="og:image" content="/assets/img/logo-full.png">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/icons/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="/index.html" class="brand">
+      <img src="/assets/img/logo-mark.png" alt="AIpex Digital">
+      <span class="brand-word">AI<strong>pex</strong> Digital</span>
+    </a>
+    <nav class="main-nav" id="main-nav">
+      <a href="/index.html">Accueil</a>
+      <a href="/offres.html">Offres</a>
+      <a href="/a-propos.html">À propos</a>
+      <a href="/contact.html" aria-current="page">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <a href="/contact.html#rdv" class="btn btn-outline on-dark">Prendre rendez-vous</a>
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Ouvrir le menu">
+        <span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section class="page-hero">
+    <div class="container">
+      <p class="breadcrumb"><a href="/index.html">Accueil</a> / Contact</p>
+      <span class="eyebrow">Contact</span>
+      <h1>Parlons de votre projet.</h1>
+      <p class="lede">Que vous ayez un projet précis ou simplement des questions, décrivez-nous votre besoin ou réservez directement un créneau d'échange.</p>
+    </div>
+  </section>
+
+  <section class="contact-section" id="rdv">
+    <div class="container">
+      <div class="contact-grid">
+        <div data-reveal>
+          <div class="contact-info-item">
+            <h4>Email</h4>
+            <a href="mailto:contact@aipex-digital.com">contact@aipex-digital.com</a>
+          </div>
+          <div class="contact-info-item">
+            <h4>Prendre rendez-vous</h4>
+            <p>Indiquez « Prise de rendez-vous » dans le formulaire avec vos disponibilités : nous revenons vers vous rapidement pour fixer un créneau d'échange.</p>
+          </div>
+          <div class="contact-info-item">
+            <h4>Zone d'intervention</h4>
+            <p>France — en présentiel ponctuel ou à distance, selon vos préférences.</p>
+          </div>
+          <div class="contact-info-item">
+            <h4>Délai de réponse</h4>
+            <p>Nous répondons à toute demande sous 48h ouvrées.</p>
+          </div>
+
+          <div class="map-note">
+            Vous préférez organiser un appel directement ? Communiquez-nous vos disponibilités via le formulaire et nous vous enverrons une confirmation de rendez-vous par email.
+          </div>
+        </div>
+
+        <div data-reveal>
+          <form class="contact-form" id="contact-form" method="POST" action="/contact.php" novalidate>
+            <div class="form-grid">
+              <div class="field">
+                <label for="name">Nom complet *</label>
+                <input type="text" id="name" name="name" autocomplete="name" required>
+              </div>
+              <div class="field">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" autocomplete="email" required>
+              </div>
+              <div class="field">
+                <label for="phone">Téléphone</label>
+                <input type="tel" id="phone" name="phone" autocomplete="tel">
+              </div>
+              <div class="field">
+                <label for="company">Entreprise</label>
+                <input type="text" id="company" name="company" autocomplete="organization">
+              </div>
+              <div class="field full">
+                <label for="subject">Type de demande *</label>
+                <select id="subject" name="subject" required>
+                  <option value="" disabled selected>Sélectionnez une option</option>
+                  <option value="Prise de rendez-vous">Prise de rendez-vous</option>
+                  <option value="Création de site web">Création de site web</option>
+                  <option value="SEO">SEO — Référencement naturel</option>
+                  <option value="SEA">SEA — Publicité en ligne</option>
+                  <option value="Consulting & IA">Consulting &amp; automatisation IA</option>
+                  <option value="Autre">Autre demande</option>
+                </select>
+              </div>
+              <div class="field full">
+                <label for="message">Votre message *</label>
+                <textarea id="message" name="message" required placeholder="Décrivez votre projet, vos objectifs ou vos disponibilités si vous souhaitez un rendez-vous..."></textarea>
+              </div>
+              <input type="text" name="website" class="field-hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+            </div>
+            <button type="submit" class="btn btn-primary">Envoyer ma demande <span class="btn-arrow">→</span></button>
+            <p class="form-note">En envoyant ce formulaire, vous acceptez d'être recontacté par AIpex Digital au sujet de votre demande. Vos données ne sont ni revendues ni transmises à des tiers.</p>
+            <div class="form-status" id="form-status" role="status"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq-section">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <span class="eyebrow">Questions fréquentes</span>
+        <h2>Avant de nous écrire.</h2>
+      </div>
+      <div class="faq-list" data-reveal>
+        <div class="faq-item" data-open="false">
+          <button class="faq-question" aria-expanded="false">
+            Combien coûte un projet avec AIpex Digital ?
+            <span class="plus" aria-hidden="true"></span>
+          </button>
+          <div class="faq-answer">
+            <p>Chaque devis dépend du périmètre de votre projet (site vitrine, e-commerce, campagnes, automatisation...). Nous établissons une proposition chiffrée après un premier échange gratuit sur vos objectifs.</p>
+          </div>
+        </div>
+        <div class="faq-item" data-open="false">
+          <button class="faq-question" aria-expanded="false">
+            Combien de temps prend la création d'un site web ?
+            <span class="plus" aria-hidden="true"></span>
+          </button>
+          <div class="faq-answer">
+            <p>Cela dépend de la complexité du projet. Un site vitrine peut être livré en quelques semaines, tandis qu'un site e-commerce ou une application sur-mesure demande davantage de temps. Un planning précis vous est communiqué dès le devis validé.</p>
+          </div>
+        </div>
+        <div class="faq-item" data-open="false">
+          <button class="faq-question" aria-expanded="false">
+            Travaillez-vous avec des entreprises en dehors de votre région ?
+            <span class="plus" aria-hidden="true"></span>
+          </button>
+          <div class="faq-answer">
+            <p>Oui, l'ensemble de nos prestations peut être mené à distance. Des points d'étape réguliers sont organisés en visioconférence tout au long du projet.</p>
+          </div>
+        </div>
+        <div class="faq-item" data-open="false">
+          <button class="faq-question" aria-expanded="false">
+            Comment gérez-vous mes données dans vos projets d'IA ?
+            <span class="plus" aria-hidden="true"></span>
+          </button>
+          <div class="faq-answer">
+            <p>Nous privilégions des solutions respectueuses de la confidentialité de vos données et vous informons clairement des outils utilisés avant toute mise en œuvre. Aucune donnée n'est exploitée sans votre accord explicite.</p>
+          </div>
+        </div>
+        <div class="faq-item" data-open="false">
+          <button class="faq-question" aria-expanded="false">
+            Puis-je faire appel à vous pour un seul service (SEO ou SEA uniquement, par exemple) ?
+            <span class="plus" aria-hidden="true"></span>
+          </button>
+          <div class="faq-answer">
+            <p>Oui, chaque offre est indépendante. Beaucoup de clients démarrent avec un seul service avant d'élargir la collaboration selon leurs besoins.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="/index.html" class="brand">
+          <img src="/assets/img/logo-mark.png" alt="AIpex Digital">
+          <span class="brand-word">AI<strong>pex</strong> Digital</span>
+        </a>
+        <p>Agence digitale spécialisée en création de sites web, SEO, SEA et consulting en intelligence artificielle pour les entreprises.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="/index.html">Accueil</a></li>
+          <li><a href="/offres.html">Offres</a></li>
+          <li><a href="/a-propos.html">À propos</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Offres</h4>
+        <ul>
+          <li><a href="/offres.html#web">Création de sites web</a></li>
+          <li><a href="/offres.html#seo">SEO</a></li>
+          <li><a href="/offres.html#sea">SEA</a></li>
+          <li><a href="/offres.html#ia">Consulting &amp; IA</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:contact@aipex-digital.com">contact@aipex-digital.com</a></li>
+          <li><a href="/contact.html#rdv">Prendre rendez-vous</a></li>
+          <li><span>France · Interventions à distance</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span id="year">2026</span> AIpex Digital. Tous droits réservés.</p>
+      <div class="footer-socials">
+        <a href="#" aria-label="LinkedIn" target="_blank" rel="noopener">in</a>
+        <a href="#" aria-label="Instagram" target="_blank" rel="noopener">ig</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="/js/main.js"></script>
+</body>
+</html>
