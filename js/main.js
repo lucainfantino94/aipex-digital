@@ -106,11 +106,11 @@
     });
   }
 
-  // Header background reinforcement on scroll
+  // Header background reinforcement on scroll (transparent over the hero, solid once scrolled)
   var header = document.querySelector(".site-header");
   if (header) {
     var onScroll = function () {
-      header.style.boxShadow = window.scrollY > 8 ? "0 8px 24px rgba(0,0,0,0.25)" : "none";
+      header.classList.toggle("is-scrolled", window.scrollY > 8);
     };
     document.addEventListener("scroll", onScroll, { passive: true });
     onScroll();
