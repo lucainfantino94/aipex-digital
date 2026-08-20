@@ -60,6 +60,22 @@
     });
   });
 
+  // Pricing panel: monthly / annual billing toggle
+  var billingToggle = document.querySelector(".billing-toggle");
+  if (billingToggle) {
+    var billingButtons = billingToggle.querySelectorAll(".billing-option");
+    billingButtons.forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        billingButtons.forEach(function (b) { b.classList.remove("is-active"); });
+        btn.classList.add("is-active");
+        var billing = btn.getAttribute("data-billing");
+        document.querySelectorAll(".price-value").forEach(function (el) {
+          el.textContent = el.getAttribute("data-" + billing);
+        });
+      });
+    });
+  }
+
   // Contact form submission (works when contact.php is available, e.g. on OVH hosting)
   var form = document.getElementById("contact-form");
   var status = document.getElementById("form-status");
