@@ -24,7 +24,7 @@
   /* --- One accent (logo blue) --- */
   --accent: #4a90ff;          /* on dark surfaces: links, numbers, focus */
   --accent-strong: #1f63d6;   /* buttons, accent text on light surfaces */
-  --accent-strong-hover: #2b72ea;
+  --accent-deep: #1a55b8;         /* hover des boutons (on fonce, on n'éclaircit pas) + petit texte accent sur gris */
   --danger: #d4423b;
   --danger-on-dark: #ff7a72;
 
@@ -159,7 +159,7 @@ h3, h4 { font-family: var(--font-sans); font-weight: 600; letter-spacing: -0.01e
 .btn .icon { transition: transform .25s var(--ease); }
 .btn:hover .icon-arrow { transform: translateX(3px); }
 .btn-primary { background: var(--accent-strong); color: var(--white); }
-.btn-primary:hover { background: var(--accent-strong-hover); }
+.btn-primary:hover { background: var(--accent-deep); }
 .btn-lg { min-height: 56px; padding: var(--s-4) var(--s-6); font-size: var(--fs-base); }
 .btn-ghost { border-color: var(--line-light); color: var(--text-on-light); background: transparent; }
 .btn-ghost:hover { border-color: var(--text-on-light); }
@@ -327,7 +327,7 @@ h3, h4 { font-family: var(--font-sans); font-weight: 600; letter-spacing: -0.01e
   transition: background-color .25s var(--ease), color .25s var(--ease);
 }
 .billing-option[aria-pressed="true"] { background: var(--white); color: var(--text-on-light); box-shadow: 0 1px 2px rgba(0,0,0,.12); }
-.save { font-size: var(--fs-xs); color: var(--accent-strong); }
+.save { font-size: var(--fs-xs); font-weight: 600; color: var(--accent-deep); }
 
 .pricing-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--s-5); margin-top: var(--s-7); align-items: stretch; }
 .price-card { background: var(--g-50); border: 1px solid var(--line-light); border-radius: var(--radius); padding: var(--s-6); display: flex; flex-direction: column; }
@@ -499,6 +499,7 @@ h3, h4 { font-family: var(--font-sans); font-weight: 600; letter-spacing: -0.01e
   .main-nav a[aria-current="page"] { color: var(--accent); }
   .main-nav a[aria-current="page"]::after { display: none; }
   .main-nav .nav-cta { display: inline-flex; margin-top: var(--s-6); font-family: var(--font-sans); font-size: var(--fs-base); border: 0; padding: var(--s-3) var(--s-5); color: var(--white); }
+  .main-nav .nav-cta:hover, .main-nav .nav-cta:focus-visible { color: var(--white); background: var(--accent-deep); }
   .header-actions .btn { display: none; }
   .nav-toggle { display: block; }
 

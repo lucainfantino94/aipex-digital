@@ -13,10 +13,10 @@ Tous les tokens sont dans `css/style.css` (`:root`). Ne pas coder de valeurs en 
 | Fond clair | `--g-100` / `--g-50` | #e9e9e7 / #f3f3f1 |
 | Texte sur sombre / secondaire | `--text-on-dark` / `--muted-on-dark` | contraste 15:1 / 7,6:1 |
 | Texte sur clair / secondaire | `--text-on-light` / `--muted-on-light` | contraste 15:1 / 6,9:1 |
-| **Accent unique** | `--accent` (sur sombre), `--accent-strong` (boutons, texte sur clair) | #4a90ff / #1f63d6 |
+| **Accent unique** | `--accent` (sur sombre), `--accent-strong` (boutons, texte sur clair), `--accent-deep` (survol des boutons, petit texte accent sur gris) | #4a90ff / #1f63d6 / #1a55b8 |
 | Erreur (sémantique uniquement) | `--danger` | #d4423b |
 
-Règles : pas de dégradé, pas de violet, pas de seconde couleur d'accent. Le bleu sert aux actions et aux repères (numéros, coches), jamais à décorer.
+Règles : pas de dégradé, pas de violet, pas de seconde couleur d'accent. Le bleu sert aux actions et aux repères (numéros, coches), jamais à décorer. Au survol, un bouton bleu **fonce** (`--accent-deep`), il ne s'éclaircit jamais : le texte blanc doit rester ≥ 4,5:1 dans tous les états.
 
 ## Texture
 
