@@ -3,8 +3,8 @@
   "configurations": [
     {
       "name": "aipex-static",
-      "runtimeExecutable": "python",
-      "runtimeArgs": ["-m", "http.server", "8420"],
+      "runtimeExecutable": "powershell",
+      "runtimeArgs": ["-NoProfile", "-ExecutionPolicy", "Bypass", "-File", ".claude/serve.ps1", "-Port", "8420"],
       "port": 8420
     }
   ]
