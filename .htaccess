@@ -34,9 +34,14 @@ ErrorDocument 404 /404.html
   ExpiresByType image/jpeg "access plus 6 months"
   ExpiresByType image/png "access plus 6 months"
   ExpiresByType image/x-icon "access plus 1 year"
+  ExpiresByType font/woff2 "access plus 1 year"
 </IfModule>
 
 # --- Ne pas exposer les fichiers internes ---
 <FilesMatch "^(README\.md|DESIGN\.md|\.gitignore)$">
   Require all denied
 </FilesMatch>
+RedirectMatch 404 ^/(_sources|\.claude|\.impeccable)/
+
+# --- Polices ---
+AddType font/woff2 .woff2

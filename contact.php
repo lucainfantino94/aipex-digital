@@ -12,6 +12,12 @@ $destinationEmail = 'contact@aipex-digital.com'; // TODO: remplacer par l'adress
 $siteName = 'AIpex Digital';
 
 function respond(bool $success, string $message): void {
+    // Without JavaScript the browser posts the form directly: send the visitor back
+    // to the contact page with a readable status instead of raw JSON.
+    if (($_SERVER['HTTP_X_REQUESTED_WITH'] ?? '') !== 'XMLHttpRequest') {
+        header('Location: contact.html?envoi=' . ($success ? 'ok' : 'erreur') . '#contact-form', true, 303);
+        exit;
+    }
     http_response_code($success ? 200 : 400);
     echo json_encode(['success' => $success, 'message' => $message]);
     exit;

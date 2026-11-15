@@ -14,10 +14,11 @@ confidentialite.html   Politique de confidentialité RGPD (champs [à compléter
 404.html               Page d'erreur personnalisée (chemins absolus /...)
 contact.php            Traitement du formulaire (PHP mail, honeypot + délai anti-bot)
 .htaccess              HTTPS forcé, 404, en-têtes de sécurité, cache (Apache / OVH)
-css/style.css          Design system « Speckled graphite » (voir DESIGN.md)
+css/style.css          Design system « Phosphor terminal » (voir DESIGN.md)
 js/main.js             Menu mobile, animations, FAQ, tarifs, validation et envoi du formulaire
-assets/img/            hero-mark.jpg (hero), og-image.jpg (partage social 1200×630),
-                       speckle-*.png (texture), logos sources (PNG haute définition)
+assets/img/            logo-phosphor-840/1400.jpg (logo), og-image.jpg (partage social 1200×630)
+assets/fonts/          Polices WOFF2 hébergées sur le site (Chakra Petch, IBM Plex Sans/Mono, DotGothic16)
+_sources/              Logos sources haute définition (non publiés : ignorés par GitHub Pages et bloqués par .htaccess)
 icons/                 Favicons et icônes PWA
 site.webmanifest, robots.txt, sitemap.xml
 ```
@@ -60,7 +61,7 @@ Le dépôt est configuré pour publier automatiquement la branche `main` via Git
 
 1. Se connecter à l'espace client OVH et récupérer les identifiants FTP de l'hébergement mutualisé.
 2. Se connecter en FTP/SFTP (ex. FileZilla) sur `ftp.votre-domaine.fr`.
-3. Copier l'intégralité du contenu de ce dépôt (à l'exception de `README.md`, `DESIGN.md`, `.claude/`, `.git/`, `.gitignore`) dans le dossier racine `www/` de l'hébergement.
+3. Copier l'intégralité du contenu de ce dépôt (à l'exception de `README.md`, `DESIGN.md`, `_sources/`, `.claude/`, `.impeccable/`, `.git/`, `.gitignore`) dans le dossier racine `www/` de l'hébergement.
 4. Vérifier que `contact.php` fonctionne (les hébergements mutualisés OVH supportent `mail()` nativement) et que l'adresse `$destinationEmail` est correcte.
 5. Pointer le nom de domaine vers l'hébergement OVH si ce n'est pas déjà fait (zone DNS).
 6. Mettre à jour les URLs absolues (canonical, sitemap, robots.txt) avec le domaine définitif si différent de celui utilisé dans ce dépôt.
