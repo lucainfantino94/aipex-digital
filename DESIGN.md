@@ -4,7 +4,7 @@ Brief : rétro-futurisme / Matrix / Technonippon. Le site se lit comme une conso
 
 Tous les tokens sont dans `css/style.css` (`:root`). Ne pas coder de valeurs en dur.
 
-## Couleurs
+## Couleurs (Colors)
 
 | Rôle | Token | Valeur |
 |---|---|---|
@@ -29,7 +29,7 @@ Règles :
 - **Barre système** en tête de section : `.sys-bar`, de la forme « code ——— 日本語 ««« ». Elle fait partie du cadre, pas du titre, et elle est `aria-hidden`.
 - **Colonnes de katakana** : `.glyph-rain`, statiques, à 10-18 % d'opacité, `aria-hidden`. C'est le clin d'œil Matrix.
 
-## Typographie
+## Typographie (Typography)
 
 | Usage | Police |
 |---|---|
@@ -55,7 +55,7 @@ Les citations et paragraphes restent en casse normale : les capitales sont rése
 - **Monogramme** (recadré sur le « AI ») : favicons, icônes PWA, et marque de 28 px dans l'en-tête et le pied de page.
 - Le PNG source haute définition et les anciens logos bleus sont rangés dans `_sources/`, qui n'est pas publié.
 
-## Composants
+## Composants (Components)
 
 - **Boutons** : `.btn-primary` (phosphore plein, une seule action principale par section), `.btn-ghost` (filet), `.text-link`. Libellés en mono capitales, hauteur min. 48 px. Pendant l'envoi : « TRANSMISSION… » clignotant.
 - **Icônes** : sprite SVG inline, trait 1,6, angles vifs (`stroke-linejoin: miter`). Pas d'emoji ni de caractère Unicode en guise d'icône.

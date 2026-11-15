@@ -10,6 +10,7 @@ offres.html            Tarifs + détail des offres (ancres : #tarifs, #web, #seo
 a-propos.html          À propos / principes
 contact.html           Formulaire de contact + FAQ
 mentions-legales.html  Mentions légales (champs [à compléter])
+conditions-generales.html Conditions générales de prestation (modèle à faire valider, champs [à compléter])
 confidentialite.html   Politique de confidentialité RGPD (champs [à compléter])
 404.html               Page d'erreur personnalisée (chemins absolus /...)
 contact.php            Traitement du formulaire (PHP mail, honeypot + délai anti-bot)

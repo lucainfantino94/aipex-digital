@@ -3,3 +3,7 @@ Thumbs.db
 *.log
 .vscode/
 node_modules/
+
+# Impeccable : réglages personnels et caches locaux
+.impeccable/config.local.json
+.impeccable/hook.cache.json
